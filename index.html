@@ -18,7 +18,7 @@
 </style>
 <ul id="list"></ul>
 <script>
-    const RAINDROP_TOKEN = "PASTE_YOUR_RAINDROP_TOKEN_HERE";
+    const RAINDROP_TOKEN = new URLSearchParams(location.search).get("token");
 
     const listEl = document.getElementById("list");
 
